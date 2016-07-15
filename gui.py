@@ -114,17 +114,17 @@ class AppForm(QMainWindow):
         '''
         if image_name == 'Galaxy Image 1':
             im = misc.imread('galaxy_images/im1.jpg')
-            pixscale = .05
+            pixscale = .00125  # arcsec / pix
             self.obj = ImageObject(im, pixscale)
             self.image_update()
         if image_name == 'Galaxy Image 2':
             im = misc.imread('galaxy_images/im2.jpg')
-            pixscale = .05
+            pixscale = .00125  # arcsec / pix
             self.obj = ImageObject(im, pixscale)
             self.image_update()
         if image_name == 'Galaxy Simulation 1':
             im = misc.imread('galaxy_simulations/im1.jpg')
-            pixscale = .1
+            pixscale = .002  # arcsec / pix
             self.obj = ImageObject(im, pixscale)
             self.image_update()
         if image_name == 'Jupiter Narrow Field Simulation':
